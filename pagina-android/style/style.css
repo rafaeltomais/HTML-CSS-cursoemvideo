@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url(../fontes/idroid.otf) format(opentype);
+}
+
+/*
+#053f05
+#133d1e
+#33a853
+#37a454
+#45b97f60
+#47DB6E
+#c5fdd4
+
+*/
+
+:root{
+    --cor0: #053f05;
+    --cor1: #07160b;
+    --cor2: #33a853;
+    --cor3: #37a454;
+    --cor4: #45b97f60;
+    --cor5: #ebe5c5;
+    --cor6: #c5fdd4;
+
+    --fonte-padrao: Arial, verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', 'cursive';
+    --fonte-android: 'Android', 'cursive';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor5);
+}
+
+main p {
+    margin: 15px 0;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+header{
+    background-image: linear-gradient(to top, var(--cor1), var(--cor2));
+    font-family: var(--fonte-padrao);
+    min-height: 150px;
+    color: white;
+    text-align: center;
+    padding: 35px 0 0 0;
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    font-size: 2.5em;
+    margin: 0 0 20px 0;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+    font-weight: normal;
+}
+
+header > p {
+    font-size: 1em;
+    margin: auto;
+    padding: 0 10px;
+    max-width: 500px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+header > nav{
+    text-align: left;
+    padding: 10px;
+    margin: 20px 10px 0 0;
+    box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.507);
+}
+
+header > nav > a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.2s;
+    background-color: transparent;
+}
+
+header > nav > a:hover {
+    background-color: #53a869;
+    color: var(--cor1);  
+    text-decoration: none; 
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: white;
+    color: var(--cor0);
+    font-family: var(--fonte-padrao);
+    margin: auto;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    box-shadow: 0px 3px 10px black;
+}
+main > article > h1{
+    margin: 0 15px;
+    padding: 0 0 10px 0;
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main > article > h2 {
+    margin: 10px 15px;
+    font-family: var(--fonte-android);
+    background-image: linear-gradient(to right, #45b97f60, white);
+    text-indent: 8px;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+main > article > p {
+    text-indent: 30px;
+    text-align: justify;
+    padding: 0 15px;
+    color: black;
+}
+
+main > article > p > span{
+    font-weight: bold;
+    color: var(--cor0);
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(5, 63, 5);
+    background-color: #45b97f60;
+    padding: 2px;
+}
+
+a:hover {
+    color: white;
+    background-color: var(--cor2);
+    text-decoration: underline;
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
+img {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+img#bugdroid{
+    max-width: 350px;
+}
+
+iframe {
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+div.video{
+    background-color: var(--cor1);
+    margin: 0 -10px 30px -10px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 54.5%;
+}
+
+aside {
+    margin: 25px;
+    background-color: #c5fdd4;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 1px 8px black;
+}
+
+aside > h3{
+    background-color: #37a454;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+}
+
+aside > p{
+    text-indent: 30px;
+    text-align: justify;
+    padding: 0 15px;
+    color: black;
+}
+
+ul{
+    margin: 10px 30px;
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+footer{
+    background-color: var(--cor1);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 0;
+    font-family: var(--fonte-padrao);
+    font-size: 0.8em;
+}
+
