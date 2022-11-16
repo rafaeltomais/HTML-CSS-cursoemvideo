@@ -1,9 +1,11 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 :root{
     --fonteText: 'Sriracha', sans-serif;
     --fonteTitle: 'Passion One', sans-serif;
+    --fonteNormal: Arial, Helvetica, sans-serif;
 }
 
 *{
@@ -11,26 +13,40 @@
     margin: 0;
 }
 
+html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+
 header{
     background-color: black;
     color: white;
     text-align: center;
-    height: 200px;
     font-weight: normal;
 }
 
 header > h1 {
+    padding-top: 50px;
     font-family: var(--fonteTitle);
-    font-size: 8em;
-    font-weight: bold;
-    
+    font-size: 7em;
+    font-weight: bold;  
+    font-variant: small-caps
 }
 
-header a {
+header > p {
+    padding-bottom: 50px;
+    font-family: var(--fonteNormal);
+}
+
+a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 main {
@@ -38,39 +54,42 @@ main {
     font-family: var(--fonteText);
 }
 
-main section.normal{
-    background-color: white;
+main section {
+    padding: 10vh 0 10vh 30px;
+    line-height: 2em;
 }
 
-main section.imagem{
+main section.normal {
+    background-color: white;
+    color: black;
+}
+
+main section.imagem {
     color: white;
     background-position: center center;
     text-shadow: 1px 1px 1px black;
+    box-shadow: inset 0px 5px 20px 0px black;
 }
 
 main > section.imagem > p {
-    width: auto;
-    
+    background-color: rgba(0, 0, 0, 0.527);
+    width: 300px;
 }
 
-main section.imagem#img01{
+main section.imagem#img01 {
     background: white url(imagens/background001.jpg) no-repeat fixed;
 }
 
-main section.imagem#img02{
+main section.imagem#img02 {
     background: white url(imagens/background002.jpg) no-repeat fixed;
-}
-
-main p {
-    padding: 30px;
 }
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     font-size: 1.1em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonteNormal);
     font-weight: normal;
 }
