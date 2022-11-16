@@ -11,3 +11,4 @@
 <a href="https://rafaeltomais.github.io/HTML-CSS-cursoemvideo/d008/index" target="_blank">Acesse o desafio 8</a><br>
 <a href="https://rafaeltomais.github.io/HTML-CSS-cursoemvideo/d009/index" target="_blank">Acesse o desafio 9</a><br>
 <a href="https://rafaeltomais.github.io/HTML-CSS-cursoemvideo/pagina-android/desafio-android" target="_blank">Acesse o desafio 10</a> - Pagina Android<br>
+<a href="https://rafaeltomais.github.io/HTML-CSS-cursoemvideo/cordel-moderno/index" target="_blank">Acesse o desafio 11</a> - Cordel Moderno<br>
